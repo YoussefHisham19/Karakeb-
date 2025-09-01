@@ -1,0 +1,161 @@
+body {
+    font-size: 15pt;
+}
+nav{
+    background:gold ;
+    height:5rem ;
+    text-align: center ;
+}
+h1{
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-optical-sizing: auto;
+  font-weight: 1000 ;
+  font-style: normal;
+  margin-top:1rem ;
+}
+header {
+  position: relative; /* الحاوية */
+  height: 20rem;      /* خلى فيه مساحة تكفى العناصر */
+}
+
+/* الشكل */
+#latsha {
+  
+  background: gold ;  
+  /*clip-path: polygon(100% 31%, 100% 100%, 0 100%, 71% 81%);*/
+ً/*  clip-path: polygon(100% 27%, 100% 100%, 0 100%, 76% 45%);*/
+{}/*clip-path: ellipse(50% 17% at 50% 50%);*/
+clip-path: polygon(100% 0%, 48% 48%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  position: absolute;
+  
+  z-index: 1; /* ده هيكون تحت */
+}
+@media(max-width:992px ){
+       #latsha{
+    height: 20rem;
+  width: 25rem;
+   top: 0rem; 
+  left : 7rem;
+  } 
+  header a{
+    height:2rem ;
+    margin-top:8rem ;
+    margin-right: 5rem ;
+  }
+ .logoimg{
+  height: 19rem;
+  width: 16rem;
+  object-fit: contain;
+  position: absolute;
+  top: 6rem ; 
+  left : 12rem ;
+  z-index: 2; /* ده فوق */
+  
+}
+header h2 {
+  z-index: 6;
+ margin-right : -8rem ;
+  margin-top: 4rem;
+  color: #FFFFFF;
+  
+}
+}
+
+@media (max-width:700px ) {
+  #latsha{
+    height: 20rem;
+  width: 15rem;
+   top: 0rem; 
+  left : 1rem;
+  }
+ .logoimg{
+  height: 10rem;
+  width: 11rem;
+  object-fit: contain;
+  position: absolute;
+  top: 10rem ; 
+  left : 3rem ;
+  z-index: 2; /* ده فوق */
+  
+}
+header{
+ /* height:15rem ;*/
+ align-content:flex-start ;
+}
+header a{
+  height:2rem ;
+margin-top:0.5rem  ;
+ margin-right: 0.5rem ;
+}
+header h2{
+  z-index:6;
+  
+  color:#FFFFFF ;
+  font-size:20px  ;
+  margin-right: 0.5rem ;
+}
+.product img {
+  height:10rem ;
+  width:10rem ;
+  object-fit: cover ;
+}
+}
+header{
+ display:flex ;
+  background: #000000 ;
+  flex-wrap:wrap ;
+  justify-content:flex-end  ;
+}
+
+header a{
+  text-decoration:none ;
+  background : #ECE6A1;
+  color: #000000 ;
+  padding:0.5rem  ;
+  border-radius:1rem ;
+ z-index: 4;
+
+}
+header a:hover{
+  background:#FEF04F;
+} 
+#whyus{
+  text-align:center ;
+  flex-direction:row-reverse ;
+}
+#whyus h3{
+  border-bottom:0.25rem solid gold ;
+  
+  
+}
+#filterBtns {
+  display:flex ;
+  flex-wrap:wrap ;
+  justify-content:center ;
+  gap:1rem ;
+  margin-top:5rem ;
+}
+button{
+  width:8rem ;
+  height:3rem;
+  border-radius:1rem ;
+  border:none ;
+  color:#000000 ;
+  background:gold ;
+  font-weight:1000 ;
+}
+.active{
+  background:#000000 ;
+  color:gold;
+  box-shadow:0 0 1rem #000000 ;
+}
+#products{
+  display:flex ;
+  flex-wrap:wrap ;
+  justify-content:center ;
+  gap: 1rem ;
+  margin-top:5rem ;
+}
+.product{
+  background: #FAF5B5;
+}

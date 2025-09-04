@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ready-made sets</title>
+     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>-->
+    <style>
+nav{
+  background:#000000 ;
+  color:gold;
+  text-align:center ;
+}
+#logo{
+  border-radius:3rem ;
+  height:4rem;
+  width:4rem ;
+  position:fixed;
+  top:0 ;
+  left:1rem ;
+  z-index:2000 ;
+}
+h3{
+  font-family: Arial ;
+}
+#filterBtns{
+  display:flex ;
+  flex-wrap:wrap ;
+  justify-content:center ;
+  gap:0.3rem ;
+  margin: 2rem 0;
+}
+.btn{
+  border:none ;
+  background: gold;
+  color:#000000 ;
+  border-radius:1rem ;
+  font-weight:bold ;
+  font-size:1.5rem ;
+}
+.active{
+  background: #000000 ;
+  color:gold;
+  box-shadow:0 0 1rem #000000;
+}
+/*.swiper-wrapper{
+  display:flex ;
+  gap: 0 ;
+}*/
+  </style>
+</head>
+<body>
+ <nav>
+  <img id="logo" src="Logo.webp">
+  <h2>Ready-made sets</h2> 
+ </nav> 
+   <!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+ <section id="filterBtns">
+
+  <button class="btn active" data-filter="all">
+    All
+  </button>
+  <button class="btn" data-filter="cornersofa">
+    Corner sofa
+  </button>
+  <button class="btn" data-filter="DiningTable">
+    DiningTable
+  </button>
+  <button class="btn" data-filter="Buffets&displayCabinets">
+    Buffets&display cabinets
+  </button>
+  <button class="btn" data-filter="Custom-madeBedrooms">
+    Custom-made bedrooms
+  </button>
+  <button class="btn" data-filter="Stainless">
+    Stainless
+  </button>
+    <button class="btn" data-filter="OutdoorFurniture">
+    Outdoor Furniture
+  </button>
+      <button class="btn" data-filter="HotelFurnishing">
+    Hotel furnishing
+  </button>
+      <button class="btn" data-filter="Chaleets&SummerHouses">
+  Chaleets&Summer houses
+  </button>
+      <button class="btn" data-filter="ServingSet">
+    Serving set
+  </button>
+</section>
+<script>
+/*const swiper = new Swiper('.swiper', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+*/
+ 
+</script>
+</body>
+
+</html>

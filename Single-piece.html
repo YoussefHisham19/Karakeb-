@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Single peice</title>
+  <style>
+nav{
+  background:#000000 ;
+  color:gold;
+  text-align:center ;
+}
+#logo{
+  border-radius:3rem ;
+  height:5rem;
+  width:5rem ;
+  position:fixed;
+  top:0 ;
+  left:1rem ;
+  z-index:2000 ;
+}
+h3{
+  font-family: Arial ;
+}
+#filterBtns{
+  display:flex ;
+  flex-wrap:wrap ;
+  justify-content:center ;
+  gap:0.3rem ;
+  margin: 2rem 0;
+}
+.btn{
+  border:none ;
+  background: gold;
+  color:#000000 ;
+  border-radius:1rem ;
+  font-weight:bold ;
+  font-size:1.5rem ;
+}
+.active{
+  background: #000000 ;
+  color:gold;
+  box-shadow:0 0 1rem #000000;
+}
+  </style>
+</head>
+<body><nav>
+    <img id="logo" src="Logo.webp">
+<h2>Single peice</h2> 
+</nav>
+<section id="filterBtns">
+  <button class="btn active" data-filter="all">
+    All
+  </button>
+  <button class="btn" data-filter="table">
+    Table
+  </button>
+  <button class="btn" data-filter="bed">
+    Bed
+  </button>
+  <button class="btn" data-filter="coffeecorner">
+    Coffee corner
+  </button>
+  <button class="btn" data-filter="shoecabinets">
+    Shoe cabinets
+  </button>
+  <button class="btn" data-filter="wardrobe">
+    Wardrobe
+  </button>
+    <button class="btn" data-filter="Desks&Bookcases">
+    Desks&Bookcases
+  </button>
+</section>
+</body>
+</html>

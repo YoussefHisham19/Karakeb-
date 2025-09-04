@@ -6,26 +6,61 @@ nav{
     height:5rem ;
     text-align: center ;
 }
+
 h1{
-  font-family: "Noto Nastaliq Urdu", serif;
-  font-optical-sizing: auto;
-  font-weight: 1000 ;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
   font-style: normal;
   margin-top:1rem ;
+  font-size:3rem ;
 }
 header {
   position: relative; /* الحاوية */
+  justify-content: flex-start;
+  
   height: 20rem;      /* خلى فيه مساحة تكفى العناصر */
 }
 
 /* الشكل */
+#sections{
+  display: flex ;
+  justify-content:center ;
+  gap:1rem ;
+  margin:4rem 0;
+}
+#sections a{
+  text-decoration:none ;
+  color:#000000 ;
+  text-align:center ;
+  padding:0.5rem  ;
+  border-radius:50% ;
+  font-weight:bold ;
+  height: 10rem;
+width:10rem;
+background-position:center;
+background-size:15rem;
+align-content:center;
+background:hsla(53, 88%, 76%, 0.5);
+backdrop-filter: blur(8rem);
+-webkit-backdrop-filter: blur(8rem);
+/* background-repeat:no-repeat ;*/
+border-radius:50%;
+}
+#sections a:hover{
+  color:gold;
+  background:#000000 ;
+  box-shadow: 0 0 1rem #000000 ;
+  transition:0.3s ;
+  
+}
 #latsha {
   
   background: gold ;  
   /*clip-path: polygon(100% 31%, 100% 100%, 0 100%, 71% 81%);*/
 ً/*  clip-path: polygon(100% 27%, 100% 100%, 0 100%, 76% 45%);*/
 {}/*clip-path: ellipse(50% 17% at 50% 50%);*/
-clip-path: polygon(100% 0%, 48% 48%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+/*clip-path: polygon(100% 0%, 48% 48%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);*/
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 62% 50%, 17% 0); 
   position: absolute;
   
   z-index: 1; /* ده هيكون تحت */
@@ -33,40 +68,49 @@ clip-path: polygon(100% 0%, 48% 48%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 @media(max-width:992px ){
        #latsha{
     height: 20rem;
-  width: 25rem;
+  width: 35rem;
    top: 0rem; 
-  left : 7rem;
+  right : 7rem;
   } 
+  header div {
+    z-index:1000 ;
+  }
   header a{
     height:2rem ;
     margin-top:8rem ;
-    margin-right: 5rem ;
+  margin-right :50rem ;
+  z-index:1000 ;
+  
   }
  .logoimg{
   height: 19rem;
   width: 16rem;
   object-fit: contain;
   position: absolute;
-  top: 6rem ; 
-  left : 12rem ;
+  top: 5rem ; 
+  left : 31rem ;
   z-index: 2; /* ده فوق */
   
 }
 header h2 {
   z-index: 6;
- margin-right : -8rem ;
+ margin-right : 8rem ;
   margin-top: 4rem;
   color: #FFFFFF;
   
+}
+img{
+  height :10rem ;
+  width:10rem ;
 }
 }
 
 @media (max-width:700px ) {
   #latsha{
     height: 20rem;
-  width: 15rem;
+  width: 17rem;
    top: 0rem; 
-  left : 1rem;
+  left : 4.25rem;
   }
  .logoimg{
   height: 10rem;
@@ -74,18 +118,19 @@ header h2 {
   object-fit: contain;
   position: absolute;
   top: 10rem ; 
-  left : 3rem ;
+  left : 8rem ;
   z-index: 2; /* ده فوق */
   
 }
 header{
  /* height:15rem ;*/
  align-content:flex-start ;
+ 
 }
 header a{
   height:2rem ;
 margin-top:0.5rem  ;
- margin-right: 0.5rem ;
+ margin-right: 11rem ;
 }
 header h2{
   z-index:6;
@@ -109,11 +154,13 @@ header{
 
 header a{
   text-decoration:none ;
-  background : #ECE6A1;
+  background: #F8EC8E;
   color: #000000 ;
   padding:0.5rem  ;
   border-radius:1rem ;
  z-index: 4;
+ align-content :center ;
+ font-weight:bold ;
 
 }
 header a:hover{
@@ -123,12 +170,13 @@ header a:hover{
   text-align:center ;
   flex-direction:row-reverse ;
 }
-#whyus h3{
+h3{
   border-bottom:0.25rem solid gold ;
-  
+  text-align:center ;
+  width:50%;
   
 }
-#filterBtns {
+/*#filterBtns {
   display:flex ;
   flex-wrap:wrap ;
   justify-content:center ;
@@ -148,8 +196,8 @@ button{
   background:#000000 ;
   color:gold;
   box-shadow:0 0 1rem #000000 ;
-}
-#products{
+}*/
+#bestsellers{
   display:flex ;
   flex-wrap:wrap ;
   justify-content:center ;

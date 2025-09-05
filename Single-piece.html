@@ -36,6 +36,79 @@ h3{
   border-radius:1rem ;
   font-weight:bold ;
   font-size:1.5rem ;
+  transition:0.3s ;
+}
+#products {
+  display:flex ;
+  flex-wrap:wrap ;
+  justify-content:center ;
+  gap: 1rem ;
+}
+.product{
+  background:#FAF5B5;
+  width:10rem ;
+  text-align:center ;
+  animation:moveBox 1s ease-in-out ;
+}
+@keyframes moveBox {
+  from {
+    transform: scale (0.5 );
+    opacity:0.5 ;
+  }to{
+    transform: scale (1);
+opacity:1;
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: gold;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background: #000000;
+  color: gold;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #FFFFFF;
+  min-width: 18rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.dropdown-content button {
+  background: none;
+  border: none;
+  color: #000000;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background: gold;
+  color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.product img {
+  height:10rem ;
+  width:10rem ;
 }
 .active{
   background: #000000 ;
@@ -49,11 +122,18 @@ h3{
 <h2>Single peice</h2> 
 </nav>
 <section id="filterBtns">
-  <button class="btn active" data-filter="all">
-    All
-  </button>
+  <div class="dropdown">
+    <button class="dropbtn btn " data-filter="all">
+      All categories ⬇️
+    </button>
+    <div class="dropdown-content">
+     
   <button class="btn" data-filter="table">
     Table
+  </button>
+  
+    <button class="btn" data-filter="buffet">
+    Buffet
   </button>
   <button class="btn" data-filter="bed">
     Bed
@@ -64,12 +144,433 @@ h3{
   <button class="btn" data-filter="shoecabinets">
     Shoe cabinets
   </button>
+    <button class="btn" data-filter="dresser with mirror">
+    dresser with mirror
+  </button>
   <button class="btn" data-filter="wardrobe">
     Wardrobe
   </button>
     <button class="btn" data-filter="Desks&Bookcases">
     Desks&Bookcases
   </button>
+  </div></div>
 </section>
+<article id="products">
+<div class="product" data-category="coffeecorner">
+  <img src="Coffeecorner01.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="dresser with mirror">
+  <img src="dresser with mirror01.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="dresser with mirror">
+  <img src="dresser with mirror02.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="dresser with mirror">
+  <img src="dresser with mirror03.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="dresser with mirror">
+  <img src="dresser with mirror04.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="shoecabinets">
+  <img src="Sheo cabinet01.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="shoecabinets">
+  <img src="Sheo cabinet02.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="shoecabinets">
+  <img src="Shoe cabinet03.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="shoecabinets">
+  <img src="Shoe cabinet04.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table01.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table02.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table03.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table04.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table05.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table06.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table07.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table07.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table08.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table09.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table10.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="table">
+  <img src="Table11.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="buffet">
+  <img src="Buffet01.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="buffet">
+  <img src="Buffet02.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="bed">
+  <img src="Beds01.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div> 
+<div class="product" data-category="bed">
+  <img src="Beds02.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div> 
+<div class="product" data-category="bed">
+  <img src="Beds03.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="bed">
+  <img src="Beds04.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="bed">
+  <img src="Beds05.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="bed">
+  <img src="Beds06.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="bed">
+  <img src="Beds07.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="wardrobe">
+  <img src="Wardrobe01.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="wardrobe">
+  <img src="Wardrobe02.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="wardrobe">
+  <img src="Wardrobe03.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="wardrobe">
+  <img src="Wardrobe04.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="wardrobe">
+  <img src="Wardrobe05.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="wardrobe">
+  <img src="Wardrobe06.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="Desks&Bookcases">
+  <img src="Desk01.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="Desks&Bookcases">
+  <img src="Chair01.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+<div class="product" data-category="Desks&Bookcases">
+  <img src="Chair02.webp" alt="">
+  <p>
+  <h4>
+    
+  </h4>
+  -description:<br />
+  -price:
+  </p>
+</div>
+</article>
+<script>
+const filterBtns = document.querySelectorAll('button[data-filter]');
+const products = document.querySelectorAll('.product');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const filter = btn.getAttribute("data-filter"); 
+    products.forEach(product => {
+      if (filter === "All" || product.getAttribute("data-category") === filter) {
+        product.style.display = "";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  });
+});
+filterBtns.forEach(btn=>{
+  btn.addEventListener('click', function () {
+filterBtns.forEach(btn=>btn.classList.remove('active'));
+this.classList.add('active')
+  })
+})
+
+
+</script>
 </body>
 </html>

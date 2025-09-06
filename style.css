@@ -223,9 +223,13 @@ footer{
   margin-top:5rem ;
   padding:1rem ;
 }
-footer iframe {
+div h3{
+  width:50%;
+}
+ iframe {
   width:100%;
   height:15rem ;
+  margin:3rem 0 ;
   box-shadow:0 0 1rem #000000 ;
 }
 footer p{
